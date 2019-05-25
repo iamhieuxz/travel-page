@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 html , 
 body {
     font-family: 'Poppins' !important;
@@ -20,6 +21,7 @@ body {
     float : left;
     font-weight : bolder;
     color : #fff;
+    cursor: pointer;
 }
 
 .nav {
@@ -39,7 +41,11 @@ body {
 .nav ul li a {
     text-decoration: none;
     color : #fff;
-    
+
+}
+.nav ul li a:hover {
+    color : #000;
+    translate: 1s ease-in-out;
 }
 
 .social-media {
@@ -54,17 +60,28 @@ body {
     padding-top: 20px;
 }
 
+.social-media ul li a {
+    color : #FFF;
+}
+
+.social-media ul li a:hover {
+    color : #000;
+    transition: .7 ease-in;
+}
+
 .side-trip {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: -4em;
+    right: -2em;
     color : #fff;
     transform: rotate(90deg);
     letter-spacing: 4px;
+    text-transform: uppercase;
 }
 
 .header {
+    font-family: 'Roboto', sans-serif;
     position: absolute;
     top:38%;
     left : 46%;
@@ -95,7 +112,14 @@ body {
     letter-spacing : 4px;
     font-weight : 600;
     font-size : 12px;
+    
 
+}
+
+.header button:hover {
+    background: #000;
+    color : #fff;
+    transition:  0.5s ease-in;
 }
 
 .bottom-bar {
@@ -111,7 +135,7 @@ body {
     background : #000;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px; 
- }]
+ }
 
  .bottom-bar h6 {
      font-weight: bolder ;

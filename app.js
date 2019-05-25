@@ -23,7 +23,7 @@ TweenMax.staggerFrom(".nav ul li a ",1.5, {
     delay : 2.4, opacity : 0, y : 20 ,ease : Expo.easeInOut
 },0.2)
 
-TweenMax.staggerFrom(".social-media ul li ",1.5, {
+TweenMax.staggerFrom(".social-media ul li a ",1.5, {
     delay : 2.4, opacity : 0, y : 20 ,ease : Expo.easeInOut
 },0.2)
 
@@ -73,3 +73,4 @@ TweenMax.from(".header button", 2 , {
     y : 20,
     ease : Expo.easeInOut
 })
+
