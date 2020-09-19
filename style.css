@@ -10,9 +10,11 @@ body {
     box-sizing: border-box;
 }
 
-body {
-    background : url('./bg.jpg') no-repeat 50% 50%;
+.background-img {
+    background-image: url(./bg.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100vh;
 }
 
 .logo {
@@ -47,21 +49,26 @@ body {
     color : #000;
     translate: 1s ease-in-out;
 }
+.nav .active {
+    font-weight: bolder;
+    color : rebeccapurple
+}
 
 .social-media {
-    position: absolute;
+    position: fixed;
     top : 50%;
     transform: translateY(-50%);
+    z-index: 100;
 }
 
 .social-media ul li {
     list-style: none;
-    color : #fff;
+    color : rebeccapurple;
     padding-top: 20px;
 }
 
 .social-media ul li a {
-    color : #FFF;
+    color : rebeccapurple;
 }
 
 .social-media ul li a:hover {
@@ -92,7 +99,7 @@ body {
 .header h1 {
     color: #fff;
     font-weight: bolder;
-
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -112,8 +119,6 @@ body {
     letter-spacing : 4px;
     font-weight : 600;
     font-size : 12px;
-    
-
 }
 
 .header button:hover {
@@ -132,23 +137,96 @@ body {
 
  .row {
     padding: 2.6em 2.6em 2em 2.6em;
-    background : #000;
+    background : rebeccapurple;  
     border-top-left-radius: 12px;
-    border-top-right-radius: 12px; 
+    border-top-right-radius: 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start ;
+ }
+
+ .row .col-lg-4 {
+     text-decoration: none;
+     color: #fff;
+     display: inline-block;
  }
 
  .bottom-bar h6 {
      font-weight: bolder ;
      text-transform: uppercase;
-
  }
 
- .bottom-bar p {
-     font-size: 14px;
-     font-weight: lighter;
+.bottom-bar p {
+    float: right;
+    font-size: 0.8em;
+}
+
+ .bottom-bar .imgs {
+    height: 100px;
+    width: auto;
  }
 
+/* page 2  */
 
+.main-bar {
+    width: 100%;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    left: 0;
+}
+
+.main-bar .container {
+    min-width: 960px;
+    min-height: 300px;
+    padding: 0;
+    margin: 0 auto
+}
+.row2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.sale-off {
+    height: 100px;
+    padding: 2rem;
+}
+
+.sale-off .name-row {
+    font-size: 1.2rem;
+}
+
+/* product */
+.col-12 {
+    display: flex;
+    justify-content: space-around;
+}
+.product-row {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.product {
+    max-width: 200px;
+    height: auto;
+    text-decoration: none;
+
+}
+.card-name {
+    font-size: 0.9rem;
+    padding: 10px;
+    margin: 0;
+}
+.card-price {
+    color : red;
+    margin: 0;
+    padding-left: 10px;
+}
+
+/* loading */
  .overlay {
      z-index: 1;
      position : absolute;
