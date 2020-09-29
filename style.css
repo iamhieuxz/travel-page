@@ -314,13 +314,39 @@ body {
      letter-spacing: 12px;
  }
 
+ /* footer */
+ footer {
+     margin-top : 20px;
+     padding: 1rem;
+     background: #0f3057;
+     color : #fff;
+     line-height: 30px;
+ }
+ .footer {
+     display: flex;
+    justify-content: space-between;
+    width: 960px;
+    align-content: flex-start;
+    margin: 0 auto;
+    height: 30px;
+ }
+ .social-media-footer ul {
+     list-style: none;
+     display: flex;
+     flex-direction:row;
+
+ }
+ .social-media-footer ul li {
+     width: 30px;
+ }
+
  @media screen and (min-width: 1200px) {
     
     .nav-link {
         width : 30%;
     }
     .work {
-        max-width: 960px;
+        max-width: 1000px;
         margin: 0 auto;
     }
     .container {
